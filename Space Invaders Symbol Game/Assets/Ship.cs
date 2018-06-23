@@ -46,5 +46,9 @@ public class Ship : MonoBehaviour
         {
             transform.Translate(-Vector2.up * speed);
         }
+        if (Input.GetKeyDown("space"))
+        {
+            print("You hit space!");
+        }
     }
 }
