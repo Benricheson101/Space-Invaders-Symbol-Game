@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4803460058891294}
   - component: {fileID: 212750592214159430}
+  - component: {fileID: 114721081965322658}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114721081965322658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1600588764453424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e835789bd25229f4a815d50a528114f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BulletSpeed: 2
 --- !u!212 &212750592214159430
 SpriteRenderer:
   m_ObjectHideFlags: 1
