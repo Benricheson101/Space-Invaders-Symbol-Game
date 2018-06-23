@@ -16,7 +16,7 @@ public class Ship : MonoBehaviour
     {
         if (Input.GetKey("a"))
         {
-            transform.Translate(Vector2.left * speed)
+            transform.Translate(Vector2.left * speed);
         }
         if (Input.GetKey("d"))
         {
