@@ -16,11 +16,11 @@ public class Ship : MonoBehaviour
     {
         if (Input.GetKey("a"))
         {
-            transform.Rotate(0, 0, 3);
+            transform.Translate(Vector2.left * speed)
         }
         if (Input.GetKey("d"))
         {
-            transform.Rotate(0, 0, -3);
+            transform.Translate(-Vector2.left * speed)
         }
         if (Input.GetKey("w"))
         {
