@@ -13,4 +13,12 @@ public class Bullet : MonoBehaviour {
 	void Update () {
         transform.Translate(Vector2.up * BulletSpeed);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Top" || collision.gameObject.name == "Bottom" || collision.gameObject.name == "Left" || collision.gameObject.name == "Right")
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

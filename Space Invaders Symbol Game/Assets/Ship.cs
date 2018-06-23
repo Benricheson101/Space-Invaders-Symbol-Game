@@ -53,5 +53,9 @@ public class Ship : MonoBehaviour
             Instantiate(Bullet, transform.position, transform.rotation);
             
         }
+        if (Input.GetKey("r"))
+        {
+            transform.rotation = Quaternion.identity;
+        }
     }
 }

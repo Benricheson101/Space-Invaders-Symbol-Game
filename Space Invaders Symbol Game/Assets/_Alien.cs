@@ -15,7 +15,7 @@ public class _Alien : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Floor")
+        if (collision.gameObject.name == "Left" || collision.gameObject.name == "SpaceShip")
         {
             Destroy(gameObject);
         }
@@ -23,7 +23,6 @@ public class _Alien : MonoBehaviour {
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
-            print("oof");
         }
     }
 }
