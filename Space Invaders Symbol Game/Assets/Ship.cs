@@ -49,7 +49,7 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKeyDown("space"))
         {
-            print("You hit space!");
+            // print("You hit space!");
             Instantiate(Bullet, transform.position, transform.rotation);
             
         }
