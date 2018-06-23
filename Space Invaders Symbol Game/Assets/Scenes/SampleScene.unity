@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 335009821}
   - component: {fileID: 335009820}
   m_Layer: 0
-  m_Name: Square
+  m_Name: World border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
