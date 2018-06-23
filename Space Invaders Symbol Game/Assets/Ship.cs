@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
+    public GameObject Bullet;
     public float speed = 0.2f;
     // Use this for initialization
     void Start()
@@ -49,6 +50,7 @@ public class Ship : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             print("You hit space!");
+            Instantiate(Bullet, transform.position, Quaternion.identity);
         }
     }
 }
