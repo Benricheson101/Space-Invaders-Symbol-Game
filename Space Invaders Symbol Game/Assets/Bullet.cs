@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour {
-    public float BulletSpeed = 2f;
+    public float BulletSpeed = 0.5f;
 	// Use this for initialization
 	void Start ()
     {
