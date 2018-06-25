@@ -13,4 +13,17 @@ public class AlienMovement : MonoBehaviour {
 	void Update () {
         transform.Translate(-transform.right*speed);
 	}
-}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Left" || collision.gameObject.name == "SpaceShip")
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+    }
+} 
+
