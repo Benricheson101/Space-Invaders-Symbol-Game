@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  color: 2
 --- !u!212 &212744157506877368
 SpriteRenderer:
   m_ObjectHideFlags: 1

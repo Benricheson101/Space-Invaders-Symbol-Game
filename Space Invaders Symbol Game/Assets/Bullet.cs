@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour {
         if (collision.gameObject.name == "Top" || collision.gameObject.name == "Bottom" || collision.gameObject.name == "Left" || collision.gameObject.name == "Right")
         {
             Destroy(gameObject);
+
         }
     }
 
