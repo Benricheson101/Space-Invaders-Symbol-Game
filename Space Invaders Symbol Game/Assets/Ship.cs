@@ -18,19 +18,19 @@ public class Ship : MonoBehaviour
     {
         if (Input.GetKey("a"))
         {
-            transform.Translate(Vector2.left * speed);
+            transform.position = new Vector2(transform.position.x + -speed, transform.position.y);
         }
         if (Input.GetKey("d"))
         {
-            transform.Translate(-Vector2.left * speed);
+            transform.position = new Vector2(transform.position.x + speed, transform.position.y);
         }
         if (Input.GetKey("w"))
         {
-            transform.Translate(Vector2.up * speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y + speed);
         }
         if (Input.GetKey("s"))
         {
-            transform.Translate(-Vector2.up * speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y+ -speed);
         }
         if (Input.GetKey("left"))
         {
@@ -42,11 +42,11 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKey("up"))
         {
-            transform.Translate(Vector2.up * speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y + speed);
         }
         if (Input.GetKey("down"))
         {
-            transform.Translate(-Vector2.up * speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y + -speed);
         }
         if (Input.GetKeyDown("space"))
         {
