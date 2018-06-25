@@ -531,6 +531,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_Name
+      value: Test Collider
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114567912455609230, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
