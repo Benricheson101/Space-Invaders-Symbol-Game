@@ -145,8 +145,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1600588764453424, guid: 15c23d5b66d4ade44825686e8039c19a, type: 2}
   speed: 0.2
+<<<<<<< HEAD
   RotationSpeed: 3
 --- !u!212 &25305647
+=======
+  RotationSpeed: 5
+--- !u!212 &904961007
+>>>>>>> 445ebb8bc1a7d934ca333062f8c040453d47cd59
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -196,6 +201,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 25305645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.73, y: -8.7, z: 0}
@@ -251,6 +257,17 @@ Rigidbody2D:
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!1 &335009819
+=======
+  m_GameObject: {fileID: 904961005}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -16.01, y: -0.81, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1369795039
+>>>>>>> 445ebb8bc1a7d934ca333062f8c040453d47cd59
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -545,8 +562,13 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
+<<<<<<< HEAD
   orthographic size: 10
   m_Depth: 0
+=======
+  orthographic size: 8.719006
+  m_Depth: -1
+>>>>>>> 445ebb8bc1a7d934ca333062f8c040453d47cd59
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -574,13 +596,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &1920105607
+=======
+--- !u!1001 &1989115906
+>>>>>>> 445ebb8bc1a7d934ca333062f8c040453d47cd59
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 4691010779642944, guid: 86b88de51c5245d428696534fd9b4010, type: 2}
       propertyPath: m_LocalPosition.x
       value: 28.9
@@ -625,4 +652,44 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86b88de51c5245d428696534fd9b4010, type: 2}
+=======
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.56281805
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+>>>>>>> 445ebb8bc1a7d934ca333062f8c040453d47cd59
   m_IsPrefabParent: 0
