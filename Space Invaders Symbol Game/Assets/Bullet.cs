@@ -5,8 +5,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
     public float BulletSpeed = 2f;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        Destroy(gameObject, 2);
 	}
 	
 	// Update is called once per frame
