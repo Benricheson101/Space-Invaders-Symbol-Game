@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shield : MonoBehaviour {
-    public bool hasShield = false;
+    public static bool hasShield = false;
     public GameObject canShoot;
-    public static bool shieldShown = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -26,6 +25,7 @@ public class Shield : MonoBehaviour {
         {
             print("Shield Power Activated!");
             Destroy(gameObject);
+            hasShield = true;
         }
         else
         {

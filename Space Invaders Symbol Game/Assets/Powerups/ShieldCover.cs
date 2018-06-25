@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShieldCover : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
