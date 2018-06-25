@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shield : MonoBehaviour {
     public bool hasShield = false;
     public GameObject canShoot;
+    public static bool shieldShown = false;
 	// Use this for initialization
 	void Start () {
 		
