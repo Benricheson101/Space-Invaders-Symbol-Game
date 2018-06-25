@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1600588764453424, guid: 15c23d5b66d4ade44825686e8039c19a, type: 2}
   speed: 0.2
-  RotationSpeed: 3
+  RotationSpeed: 5
 --- !u!212 &904961007
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -254,7 +254,7 @@ Camera:
   far clip plane: 1000
   field of view: 45.565853
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 8.719006
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
