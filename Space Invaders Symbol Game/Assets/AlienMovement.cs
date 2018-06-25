@@ -29,7 +29,7 @@ public class AlienMovement : MonoBehaviour {
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
             }
-            else {//the color is wrongS
+            else {//the color is wrongs
             }
                 
         }
