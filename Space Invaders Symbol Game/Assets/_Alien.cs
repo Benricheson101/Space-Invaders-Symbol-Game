@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class _Alien : MonoBehaviour {
+    public Box ColorBox;
 
 	// Use this for initialization
 	void Start () {
+        ColorBox = GameObject.Find("Color Box").GetComponent<Box>();
 		
 	}
 	

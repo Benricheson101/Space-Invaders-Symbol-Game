@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class AlienMovement : MonoBehaviour {
     public float speed = 1;
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public int color = 0;
+    public Box ColorBox;
+
+    // Use this for initialization
+    void Start () {
+        ColorBox = GameObject.Find("Color Box").GetComponent<Box>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,8 +24,14 @@ public class AlienMovement : MonoBehaviour {
         }
         else
         {
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
+            if (ColorBox.colorToShoot == color)//the color is right 
+            {
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
+            }
+            else {//the color is wrongS
+            }
+                
         }
     }
 } 
