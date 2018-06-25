@@ -165,7 +165,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -221,8 +221,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ea2f43d3d7cd6439b6e54ce7330ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Alien: {fileID: 1775279418432266, guid: ef3457fe63638b746af9bc7cf2c9aed3, type: 2}
+  Alien:
+  - {fileID: 1688013770244212, guid: dbb4539687456334b89ef5707e0875e0, type: 2}
+  - {fileID: 1788449591518882, guid: 4e46be474b0ae524ba55fc25e660c6ef, type: 2}
+  - {fileID: 1775279418432266, guid: ef3457fe63638b746af9bc7cf2c9aed3, type: 2}
+  - {fileID: 1074489522644530, guid: dc46208f46fe3374e84387a79ccfeae2, type: 2}
   interval: 1
+  ScreenRight: -13
+  ScreenLeft: 13
 --- !u!4 &1721493574
 Transform:
   m_ObjectHideFlags: 0
@@ -230,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721493572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.08, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

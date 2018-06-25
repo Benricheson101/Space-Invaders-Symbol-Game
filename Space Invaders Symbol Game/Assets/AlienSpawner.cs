@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AlienSpawner : MonoBehaviour {
-    public GameObject Alien;
+    public GameObject[] Alien;
     public float interval;
     private float LastAlien;
 
-	// Use this for initialization
-	void Start () {
+    public float ScreenRight;
+    public float ScreenLeft;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -16,7 +19,9 @@ public class AlienSpawner : MonoBehaviour {
 	void Update () {
 		if(Time.time-interval>=LastAlien)
         {
-            Instantiate(Alien, transform.position, Quaternion.identity);
+            transform.position = new Vector2( 0, Random.Range(ScreenLeft, ScreenRight));
+        int RandomAlineIndex = Random.Range(0, 4);
+            Instantiate(Alien[RandomAlineIndex], transform.position, Quaternion.identity);
             LastAlien = Time.time;
         }
 	}
