@@ -13,33 +13,17 @@ public class Shield : MonoBehaviour {
 	void Update () {
 		
 	}
-    //    private void OnCollisionEnter2D(Collision2D collision)
-    //    {
-    //        if (collision.gameObject.name == "SpaceShip" || //collision.gameObject.name == "OtherBulletThing(Clone)")
-    //        {
-    //            print("Shield Power Activated!");
-    //            Destroy(gameObject);
-    //        }
-    //        else if (collision.gameObject.name == "Bullet")
-    //        {
-    //            print("You shot the shield with a normal bullet!");
-    //        }
-    //        else
-    //        {
-    //            print("?");
-    //        }
-    //    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "OtherBulletThing" || collision.gameObject.name == "SpaceShip")
+        if (collision.gameObject.name == "OtherBulletThing(Clone)" || collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "_Ship")
         {
             print("Shield Power Activated!");
             Destroy(gameObject);
         }
         else
         {
-            print("?");
+            print("Hit by:" + collision.gameObject.name);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
