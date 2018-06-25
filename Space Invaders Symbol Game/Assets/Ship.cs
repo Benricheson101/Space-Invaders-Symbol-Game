@@ -53,9 +53,9 @@ public class Ship : MonoBehaviour
             Instantiate(Bullet, transform.position, transform.rotation);
             
         }
-        if (Input.GetKey("r"))
+        if (Input.GetKeyDown("r"))
         {
-            transform.rotation = Quaternion.identity;
+            transform.eulerAngles = new Vector3(0, 0, -90);
         }
     }
 }
