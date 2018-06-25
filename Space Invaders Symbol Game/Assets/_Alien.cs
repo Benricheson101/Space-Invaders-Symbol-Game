@@ -13,7 +13,7 @@ public class _Alien : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (col.gameobject)
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
