@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shield : MonoBehaviour {
-
+    public bool hasShield = false;
+    public GameObject canShoot;
 	// Use this for initialization
 	void Start () {
 		
@@ -11,8 +12,12 @@ public class Shield : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (hasShield == true)
+        {
+            print("You currently have Shield enabled!");
+
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
