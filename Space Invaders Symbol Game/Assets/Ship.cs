@@ -6,6 +6,7 @@ public class Ship : MonoBehaviour
 {
     public GameObject Bullet;
     public float speed = 0.2f;
+    public float RotationSpeed = 3f;
     // Use this for initialization
     void Start()
     {
@@ -33,11 +34,11 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKey("left"))
         {
-            transform.Rotate(0, 0, 3);
+            transform.Rotate(0, 0, RotationSpeed);
         }
         if (Input.GetKey("right"))
         {
-            transform.Rotate(0, 0, -3);
+            transform.Rotate(0, 0, -RotationSpeed);
         }
         if (Input.GetKey("up"))
         {
@@ -49,7 +50,6 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKeyDown("space"))
         {
-            // print("You hit space!");
             Instantiate(Bullet, transform.position, transform.rotation);
             
         }
