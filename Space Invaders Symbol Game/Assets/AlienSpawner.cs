@@ -30,6 +30,13 @@ public class AlienSpawner : MonoBehaviour {
     {
         Score++;
     }
-    void RemoveLife ()
+    void RemoveLife()
+    {
+        Lives--;
+        if (Lives == 0)
+        {
+          
+        }
     }
+    
 }
