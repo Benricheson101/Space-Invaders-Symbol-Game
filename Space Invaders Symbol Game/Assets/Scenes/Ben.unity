@@ -490,7 +490,7 @@ Transform:
   m_LocalScale: {x: 0.3026892, y: 0.3026892, z: 0.3026892}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &754154077
 Rigidbody2D:
@@ -1257,7 +1257,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4948338284965370, guid: 693ef12f48dd1cc40af880bfafc83e6e, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114966211909220506, guid: 693ef12f48dd1cc40af880bfafc83e6e,
         type: 2}
@@ -1682,7 +1682,6 @@ GameObject:
   - component: {fileID: 1615792936}
   - component: {fileID: 1615792931}
   - component: {fileID: 1615792935}
-  - component: {fileID: 1615792932}
   m_Layer: 0
   m_Name: Alien (3)
   m_TagString: Untagged
@@ -1716,17 +1715,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
---- !u!114 &1615792932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1615792930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a90aef9ffe89e654fa55c4d0a41a0904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1615792933
 SpriteRenderer:
   m_ObjectHideFlags: 0
