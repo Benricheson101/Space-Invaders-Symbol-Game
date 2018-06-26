@@ -7,6 +7,7 @@ public class _Ship : MonoBehaviour
     public GameObject Bullet;
     public float speed = 0.2f;
     public float RotationSpeed = 3f;
+    public GameObject Shield;
     // Use this for initialization
     void Start()
     {
@@ -58,6 +59,8 @@ public class _Ship : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 0, -90);
         }
         if (Input.GetKeyDown("[-]"))
-            print("num pad -");
+        {
+            Instantiate(Shield, transform.position, Quaternion.identity);
+        }
     }
 }

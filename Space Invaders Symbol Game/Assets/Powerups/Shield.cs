@@ -9,7 +9,7 @@ public class Shield : MonoBehaviour {
     public float spawnedTime;
 	// Use this for initialization
 	void Start () {
-		
+        shieldCover = GameObject.Find("Shield_Cover");
 	}
 	
 	// Update is called once per frame
@@ -17,8 +17,8 @@ public class Shield : MonoBehaviour {
         
         if (Time.time>= spawnedTime)
         {
-            print("Here");
-            shieldCover.SetActive(false);
+
+            shieldCover.transform.GetChild(0).gameObject.SetActive(false);
         }
 
     }
@@ -30,7 +30,7 @@ public class Shield : MonoBehaviour {
             print("Shield Power Activated!");
             Destroy(gameObject);
             hasShield = true;
-            shieldCover.SetActive(true);
+            shieldCover.transform.GetChild(0).gameObject.SetActive(true);
             spawnedTime = Time.time;
 
         }
