@@ -33,17 +33,20 @@ public class AlienMovement : MonoBehaviour {
             }
             if (collision.gameObject.name == "Earthcollider")
             {
-                if (GetComponent<SpriteRenderer>().color == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().color)
+                if (GetComponent<SpriteRenderer>().sprite == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().sprite)
+                {
                     print("color match");
 
-                    GameObject.Find("Alien Spawner").SendMessage("RemoveLife");
+                    GameObject.Find("AlienSpawner").SendMessage("RemoveLife");
+                }
+                    
                 Destroy(gameObject);
             }
             else
             {
                 //Destroy(collision.gameObject);
                 Destroy(gameObject);
-                GameObject.Find("Alien Spawner").SendMessage("AddScore");
+                GameObject.Find("AlienSpawner").SendMessage("AddScore");
             }
         }
     }
