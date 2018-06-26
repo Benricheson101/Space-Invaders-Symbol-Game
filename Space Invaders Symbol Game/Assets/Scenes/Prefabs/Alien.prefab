@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114935096587815588}
   m_Layer: 0
   m_Name: Alien
-  m_TagString: Untagged
+  m_TagString: Alien
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7c8c31bbcf23545bfa01ac4c0be09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 0.08
   color: 0
   ColorBox: {fileID: 0}
 --- !u!212 &212761641452994096
