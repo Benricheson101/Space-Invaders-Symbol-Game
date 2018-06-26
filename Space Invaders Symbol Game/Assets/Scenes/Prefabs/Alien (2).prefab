@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   color: 1
+  ColorBox: {fileID: 0}
 --- !u!212 &212345959037467328
 SpriteRenderer:
   m_ObjectHideFlags: 1
