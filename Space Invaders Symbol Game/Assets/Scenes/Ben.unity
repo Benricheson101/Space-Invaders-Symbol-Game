@@ -864,7 +864,6 @@ GameObject:
   - component: {fileID: 1013751086}
   - component: {fileID: 1013751088}
   - component: {fileID: 1013751085}
-  - component: {fileID: 1013751084}
   m_Layer: 0
   m_Name: Alien (1)
   m_TagString: Untagged
@@ -872,17 +871,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1013751084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1013751083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a90aef9ffe89e654fa55c4d0a41a0904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1013751085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -992,7 +980,6 @@ GameObject:
   - component: {fileID: 1185057217}
   - component: {fileID: 1185057219}
   - component: {fileID: 1185057215}
-  - component: {fileID: 1185057216}
   m_Layer: 0
   m_Name: Alien (2)
   m_TagString: Untagged
@@ -1026,17 +1013,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
---- !u!114 &1185057216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1185057214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a90aef9ffe89e654fa55c4d0a41a0904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1185057217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1405,7 +1381,6 @@ GameObject:
   - component: {fileID: 1317534921}
   - component: {fileID: 1317534923}
   - component: {fileID: 1317534919}
-  - component: {fileID: 1317534920}
   m_Layer: 0
   m_Name: Alien 1
   m_TagString: Untagged
@@ -1439,17 +1414,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.55, y: 1.44}
   m_EdgeRadius: 0
---- !u!114 &1317534920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1317534918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a90aef9ffe89e654fa55c4d0a41a0904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1317534921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1681,7 +1645,6 @@ GameObject:
   - component: {fileID: 1615792933}
   - component: {fileID: 1615792936}
   - component: {fileID: 1615792931}
-  - component: {fileID: 1615792935}
   m_Layer: 0
   m_Name: Alien (3)
   m_TagString: Untagged
@@ -1775,26 +1738,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1615792935
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1615792930}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &1615792936
 MonoBehaviour:
   m_ObjectHideFlags: 0
