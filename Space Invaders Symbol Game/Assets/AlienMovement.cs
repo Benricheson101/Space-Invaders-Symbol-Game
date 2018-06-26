@@ -26,19 +26,19 @@ public class AlienMovement : MonoBehaviour {
         {
             if (ColorBox.colorToShoot == color)//the color is right 
             {
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
                 Destroy(gameObject);
             }
             else {//the color is wrongs
             }
-            if (collision.gameObject.name == "TestCollider")
+            if (collision.gameObject.name == "EarthCollider")
             {
                 GameObject.Find("AlienSpawner").SendMessage("RemoveLife");
                 Destroy(gameObject);
             }
             else
             {
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
                 Destroy(gameObject);
                 GameObject.Find("AlienSpawner").SendMessage("AddScore");
             }
