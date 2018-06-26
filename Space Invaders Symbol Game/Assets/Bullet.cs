@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        print(Shield.hasShield);
     }
 	
 	// Update is called once per frame
