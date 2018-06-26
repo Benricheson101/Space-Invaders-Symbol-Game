@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/How To Play.unity
     guid: 8607320572d1ca440800afad73b1156e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 91fd1bb94f529d04690639375eb246a7
+  - enabled: 1
+    path: Assets/Scenes/Retry,exit,back to main menu.unity
+    guid: eb3e82e89552cf148b29809c2b11a8c3
   m_configObjects: {}
