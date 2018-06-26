@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour {
     public static bool hasShield = false;
-    public GameObject canShoot;
+    public GameObject shieldCover;
+    public float lengthOfTime = 2f;
+    public float spawnedTime;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,11 +14,13 @@ public class Shield : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (hasShield == true)
+        
+        if (Time.time>= spawnedTime)
         {
-            print("You currently have Shield enabled!");
-
+            print("Here");
+            shieldCover.SetActive(false);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,6 +30,9 @@ public class Shield : MonoBehaviour {
             print("Shield Power Activated!");
             Destroy(gameObject);
             hasShield = true;
+            shieldCover.SetActive(true);
+            spawnedTime = Time.time;
+
         }
         else
         {
