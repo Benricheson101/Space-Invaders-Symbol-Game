@@ -25,4 +25,8 @@ public class AlienSpawner : MonoBehaviour {
             LastAlien = Time.time;
         }
 	}
+    void AddScore()
+    {
+
+    }
 }

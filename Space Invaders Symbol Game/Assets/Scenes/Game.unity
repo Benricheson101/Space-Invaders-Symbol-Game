@@ -223,13 +223,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66441358}
-  m_LocalRotation: {x: -0.00086603814, y: 0.00085123174, z: -0.70098376, w: 0.71317625}
-  m_LocalPosition: {x: 7.91, y: 3.26, z: 0}
-  m_LocalScale: {x: -0.30255243, y: 2.121685, z: 1}
+  m_LocalRotation: {x: 0.00086304336, y: -0.00085426465, z: 0.7034874, w: -0.71070683}
+  m_LocalPosition: {x: 7.856, y: 3.325, z: 0}
+  m_LocalScale: {x: -0.4188603, y: 2.0134318, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.002, y: 0.13900001, z: -89.012}
+  m_LocalEulerAnglesHint: {x: -0.001, y: 0.13900001, z: -449.415}
 --- !u!1 &80627864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1384,11 @@ Prefab:
     - target: {fileID: 114487202606362230, guid: 86b88de51c5245d428696534fd9b4010,
         type: 2}
       propertyPath: interval
-      value: 1.8
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389322983217602, guid: 86b88de51c5245d428696534fd9b4010, type: 2}
+      propertyPath: m_Name
+      value: AlienSpawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86b88de51c5245d428696534fd9b4010, type: 2}

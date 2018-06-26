@@ -31,7 +31,17 @@ public class AlienMovement : MonoBehaviour {
             }
             else {//the color is wrongs
             }
-                
+            if (collision.gameObject.name == "TestCollider")
+            {
+                GameObject.Find("AlienSpawner").SendMessage("RemoveLife");
+                Destroy(gameObject);
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
+                GameObject.Find("AlienSpawner").SendMessage("AddScore");
+            }
         }
     }
 } 
