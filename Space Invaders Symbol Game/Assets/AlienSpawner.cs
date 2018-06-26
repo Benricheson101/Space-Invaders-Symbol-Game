@@ -26,11 +26,11 @@ public class AlienSpawner : MonoBehaviour {
             LastAlien = Time.time;
         }
 	}
-    void AddScore()
+   public void AddScore()
     {
         Score++;
     }
-    void RemoveLife()
+   public void RemoveLife()
     {
         Lives--;
         if (Lives == 0)
