@@ -57,5 +57,7 @@ public class _Ship : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, -90);
         }
+        if (Input.GetKeyDown("[-]"))
+            print("num pad -");
     }
 }
