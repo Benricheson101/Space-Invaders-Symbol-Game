@@ -25,7 +25,7 @@ public class Shield : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "OtherBulletThing(Clone)" || collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "_Ship" || collision.gameObject.name== "Shield")
+        if (collision.gameObject.CompareTag("CanHitShield"))
         {
             print("Shield Power Activated!");
             Destroy(gameObject);
@@ -33,12 +33,6 @@ public class Shield : MonoBehaviour {
             shieldCover.transform.GetChild(0).gameObject.SetActive(true);
             spawnedTime = Time.time;
 
-        }
-        else
-        {
-            print("Hit by:" + collision.gameObject.name);
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
         }
     }
 
