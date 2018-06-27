@@ -7,6 +7,7 @@ public class Ship : MonoBehaviour
     public GameObject Bullet;
     public float speed = 0.2f;
     public float RotationSpeed = 3f;
+    public AudioSource laser;
     // Use this for initialization
     void Start()
     {
@@ -51,7 +52,7 @@ public class Ship : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             Instantiate(Bullet, transform.position, transform.rotation);
-            
+            laser.Play();
         }
         if (Input.GetKeyDown("r"))
         {

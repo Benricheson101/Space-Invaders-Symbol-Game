@@ -12,7 +12,7 @@ public class AlienSpawner : MonoBehaviour {
     public float ScreenRight;
     public float ScreenLeft;
     public SpriteRenderer[] Hearts;
-    public AudioSource oof;
+    
 
     // Use this for initialization
     void Start () {
@@ -63,7 +63,7 @@ public class AlienSpawner : MonoBehaviour {
         Lives--;
         if (Lives == 0)
         {
-            oof.Play();
+           
             SceneManager.LoadScene(4);
         }
     }
