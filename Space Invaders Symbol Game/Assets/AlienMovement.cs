@@ -12,11 +12,12 @@ public class AlienMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         ColorBox = GameObject.Find("Color Box").GetComponent<Box>();
-    }
+        }
 	
 	// Update is called once per frame
 	void Update () {
         transform.Translate(-transform.right * speed);
+        
       }
     private void OnTriggerEnter2D(Collider2D collision)
     {
