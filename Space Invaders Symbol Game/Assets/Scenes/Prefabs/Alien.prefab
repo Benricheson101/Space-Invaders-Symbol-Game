@@ -81,8 +81,9 @@ MonoBehaviour:
   speed: 0.1
   color: 0
   ColorBox: {fileID: 0}
-  oscillation: 40
+  oscillation: 0.02
   gracePeriod: 1.5
+  frequency: 5
 --- !u!212 &212761641452994096
 SpriteRenderer:
   m_ObjectHideFlags: 1
