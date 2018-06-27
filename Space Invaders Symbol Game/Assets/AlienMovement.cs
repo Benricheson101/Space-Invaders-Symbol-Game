@@ -47,6 +47,14 @@ public class AlienMovement : MonoBehaviour {
                 }
                 Destroy(gameObject);
             }
+            else
+            {
+                Destroy(gameObject);
+                GameObject.Find("AlienSpawner").SendMessage("AddScore");
+            }
+           
+           
+
           
         }
     }
