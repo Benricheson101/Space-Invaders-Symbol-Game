@@ -12,7 +12,7 @@ public class ShieldCover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if(Time.time-4 >= timestart)
+        if(Time.time-5 >= timestart)
         {
             gameObject.SetActive(false);
         }

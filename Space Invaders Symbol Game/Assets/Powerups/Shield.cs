@@ -25,7 +25,7 @@ public class Shield : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "OtherBulletThing(Clone)" || collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "_Ship")
+        if (collision.gameObject.name == "OtherBulletThing(Clone)" || collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "_Ship" || collision.gameObject.name== "Shield")
         {
             print("Shield Power Activated!");
             Destroy(gameObject);
