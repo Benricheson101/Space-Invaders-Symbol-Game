@@ -11,6 +11,8 @@ public class AlienSpawner : MonoBehaviour {
     public int Lives;
     public float ScreenRight;
     public float ScreenLeft;
+    public SpriteRenderer[] Hearts;
+    public AudioSource oof;
 
     // Use this for initialization
     void Start () {
@@ -27,7 +29,31 @@ public class AlienSpawner : MonoBehaviour {
             LastAlien = Time.time;
             interval = interval/1.001f;
         }
-	}
+        if (Lives == 3)
+        {
+            Hearts[0].enabled = true;
+            Hearts[1].enabled = true;
+            Hearts[2].enabled = true;
+        }
+        if (Lives == 2)
+        {
+            Hearts[0].enabled = true;
+            Hearts[1].enabled = true;
+            Hearts[2].enabled = false;
+        }
+        if (Lives == 1)
+        {
+            Hearts[0].enabled = true;
+            Hearts[1].enabled = false;
+            Hearts[2].enabled = false;
+        }
+        if (Lives == 0)
+        {
+            Hearts[0].enabled = false;
+            Hearts[1].enabled = false;
+            Hearts[2].enabled = false;
+        }
+    }
    public void AddScore()
     {
         Score++;
@@ -37,6 +63,7 @@ public class AlienSpawner : MonoBehaviour {
         Lives--;
         if (Lives == 0)
         {
+            oof.Play();
             SceneManager.LoadScene(4);
         }
     }
