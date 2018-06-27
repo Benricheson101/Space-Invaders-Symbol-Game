@@ -516,6 +516,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1748879857449116, guid: 5a3843dcb755f024e81c13445a9c3d44, type: 2}
+      propertyPath: m_Name
+      value: EarthCollider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a3843dcb755f024e81c13445a9c3d44, type: 2}
   m_IsPrefabParent: 0
