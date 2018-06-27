@@ -26,7 +26,7 @@ public class AlienMovement : MonoBehaviour {
         {
             if (ColorBox.colorToShoot == color)//the color is right 
             {
-                //Destroy(collision.gameObject);
+                
                 Destroy(gameObject);
             }
             else {//the color is wrongs
@@ -44,9 +44,9 @@ public class AlienMovement : MonoBehaviour {
             }
             else
             {
-                //Destroy(collision.gameObject);
                 Destroy(gameObject);
                 GameObject.Find("AlienSpawner").SendMessage("AddScore");
+                
             }
         }
     }
