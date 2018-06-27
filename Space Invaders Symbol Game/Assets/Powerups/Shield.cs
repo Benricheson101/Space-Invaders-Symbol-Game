@@ -25,7 +25,7 @@ public class Shield : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("CanHitShield"))
+        if (collision.gameObject.CompareTag("UsedByPowerups"))
         {
             print("Shield Power Activated!");
             Destroy(gameObject);

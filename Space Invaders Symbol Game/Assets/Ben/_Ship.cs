@@ -62,9 +62,5 @@ public class _Ship : MonoBehaviour
         {
             Instantiate(Shield, transform.position, Quaternion.identity);
         }
-        if (Input.GetKeyDown("[*]"))
-        {
-            print(AlienSpawner.Lives);
-        }
     }
 }

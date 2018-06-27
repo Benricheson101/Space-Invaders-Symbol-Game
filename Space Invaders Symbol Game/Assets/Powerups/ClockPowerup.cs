@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Heart : MonoBehaviour {
+public class ClockPowerup : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +15,8 @@ public class Heart : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Hit by: " + collision.gameObject.name);
-        if(collision.gameObject.CompareTag("UsedByPowerups"))
-        {
-            Destroy(gameObject);
-        }
+        print("Slow Mode activated");
+        Destroy(gameObject);
     }
+
 }

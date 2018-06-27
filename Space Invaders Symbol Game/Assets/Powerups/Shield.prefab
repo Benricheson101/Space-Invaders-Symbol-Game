@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212317340814114254}
   - component: {fileID: 114966211909220506}
   - component: {fileID: 61569918049247784}
-  - component: {fileID: 50003838587789998}
+  - component: {fileID: 50929658266381036}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -43,21 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50003838587789998
+--- !u!50 &50929658266381036
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1921547636552420}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
