@@ -16,5 +16,6 @@ public class Heart : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Hit by: " + collision.gameObject.name);
+        AlienSpawner.Lives++;
     }
 }
