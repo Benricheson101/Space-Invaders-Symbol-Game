@@ -18,6 +18,7 @@ public class Heart : MonoBehaviour {
         print("Hit by: " + collision.gameObject.name);
         if(collision.gameObject.CompareTag("UsedByPowerups"))
         {
+            if(GameObject.Find("Alien Spawner")) GameObject.Find("Alien Spawner").GetComponent<AlienSpawner>().Lives++;
             Destroy(gameObject);
         }
     }
