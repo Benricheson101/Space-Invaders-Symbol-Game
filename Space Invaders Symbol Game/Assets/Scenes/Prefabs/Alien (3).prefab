@@ -79,8 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
-  color: 0
+  color: 2
   ColorBox: {fileID: 0}
+  gracePeriod: 1.5
 --- !u!212 &212744157506877368
 SpriteRenderer:
   m_ObjectHideFlags: 1
