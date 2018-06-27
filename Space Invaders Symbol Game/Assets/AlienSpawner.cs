@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AlienSpawner : MonoBehaviour {
     public GameObject[] Alien;
@@ -35,7 +36,7 @@ public class AlienSpawner : MonoBehaviour {
         Lives--;
         if (Lives == 0)
         {
-          
+            SceneManager.LoadScene(4);
         }
     }
     
