@@ -285,6 +285,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 25.406683
       objectReference: {fileID: 0}
+    - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
   m_IsPrefabParent: 0
@@ -812,6 +816,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.64944994
       objectReference: {fileID: 0}
+    - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_TagString
+      value: Walls
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
   m_IsPrefabParent: 0
@@ -873,6 +881,10 @@ Prefab:
     - target: {fileID: 4934652173816302, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
       propertyPath: m_LocalScale.y
       value: 31.002241
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_TagString
+      value: Walls
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
@@ -1663,6 +1675,10 @@ Prefab:
     - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
       propertyPath: m_Name
       value: World Border (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
+      propertyPath: m_TagString
+      value: Walls
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}

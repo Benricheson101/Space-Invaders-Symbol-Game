@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - CanHitShield
   - UsedByPowerups
+  - Walls
   layers:
   - Default
   - TransparentFX
