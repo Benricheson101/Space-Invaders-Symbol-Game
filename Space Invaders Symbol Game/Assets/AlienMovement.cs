@@ -6,8 +6,8 @@ public class AlienMovement : MonoBehaviour {
     public float speed = 1;
     public int color;
     public Box ColorBox;
-   // public bool colorismatched;
-
+    // public bool colorismatched;
+    public float oscillation = 1f;
     public float gracePeriod = 1.5f;
     // Use this for initialization
     void Start () {
@@ -16,7 +16,7 @@ public class AlienMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(-transform.right * speed);
+        transform.Translate(-transform.right * speed +( transform.up * Mathf.Sin(Time.time))/oscillation);
         
       }
     private void OnTriggerEnter2D(Collider2D collision)
