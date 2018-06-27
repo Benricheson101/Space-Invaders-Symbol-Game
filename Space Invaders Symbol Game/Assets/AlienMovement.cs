@@ -39,15 +39,15 @@ public class AlienMovement : MonoBehaviour {
 
                     GameObject.Find("AlienSpawner").SendMessage("RemoveLife");
                 }
+                else
+                {
                     
+                    GameObject.Find("AlienSpawner").SendMessage("AddScore");
+
+                }
                 Destroy(gameObject);
             }
-            else
-            {
-                Destroy(gameObject);
-                GameObject.Find("AlienSpawner").SendMessage("AddScore");
-                
-            }
+          
         }
     }
 } 
