@@ -7,8 +7,8 @@ public class AlienSpawner : MonoBehaviour {
     public GameObject[] Alien;
     public float interval;
     private float LastAlien;
-    public int Score;
-    public int Lives;
+    public static int Score;
+    public static int Lives;
     public float ScreenRight;
     public float ScreenLeft;
 
