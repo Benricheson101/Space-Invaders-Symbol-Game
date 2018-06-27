@@ -8,6 +8,9 @@ public class Box : MonoBehaviour {
     public float Lastcolorchange;
     public float interval;
     public Sprite[] TypesOfAliens;
+    public bool switching; 
+    private float switchinginterval=1;
+    private float lastswitch=0;
     
 
     // Use this for initialization
@@ -17,10 +20,19 @@ public class Box : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (colorToShoot == 0) { sr.sprite = TypesOfAliens[0]; }
-        if (colorToShoot == 1) { sr.sprite = TypesOfAliens[1]; }
-        if (colorToShoot == 2) { sr.sprite= TypesOfAliens[2]; }
-        if (colorToShoot == 3) { sr.sprite = TypesOfAliens[3]; }
+            if (colorToShoot == 0) { sr.sprite = TypesOfAliens[0]; }
+            if (colorToShoot == 1) { sr.sprite = TypesOfAliens[1]; }
+            if (colorToShoot == 2) { sr.sprite = TypesOfAliens[2]; }
+            if (colorToShoot == 3) { sr.sprite = TypesOfAliens[3]; }
+            
+        if(switching == true)
+        {
+            if (Time.time - switchinginterval >= lastswitch)
+            {
+                switching = false;
+            }
+        }
+    
 
 
         if (Time.time - interval >= Lastcolorchange)
@@ -29,8 +41,9 @@ public class Box : MonoBehaviour {
 
             //check the trigger for selected color and destroy them
             //AlienMovement.EliminatePastEnemies();
-
+            switching = true;
             Lastcolorchange = Time.time;
+            lastswitch = Time.time;
         }
     }
 }

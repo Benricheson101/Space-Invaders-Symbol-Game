@@ -498,6 +498,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 7cb9357495f601744becebb8da33faf0,
         type: 3}
+    - target: {fileID: 114818404154056690, guid: 7143b1db9bee6b746bd5b73ca2f519ce,
+        type: 2}
+      propertyPath: switching
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7143b1db9bee6b746bd5b73ca2f519ce, type: 2}
   m_IsPrefabParent: 0
@@ -854,7 +859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1498449482
 Rigidbody2D:
   serializedVersion: 4

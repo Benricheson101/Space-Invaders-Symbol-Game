@@ -22,9 +22,10 @@ public class AlienSpawner : MonoBehaviour {
 		if(Time.time-interval>=LastAlien)
         {
             transform.position = new Vector2( 13, Random.Range(ScreenLeft, ScreenRight));
-        int RandomAlineIndex = Random.Range(0, 4);
+            int RandomAlineIndex = Random.Range(0, 4);
             Instantiate(Alien[RandomAlineIndex], transform.position, Quaternion.identity);
             LastAlien = Time.time;
+            interval = interval/1.001f;
         }
 	}
    public void AddScore()
