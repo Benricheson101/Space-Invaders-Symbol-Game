@@ -9,6 +9,9 @@ public class Ship : MonoBehaviour
     public float RotationSpeed = 3f;
     public AudioSource laser;
     public  bool canshoot = true;
+    public bool ShipSpin = false;
+    public float PlayerSpin = 1f;
+
     // Use this for initialization
     void Start()
     {
@@ -59,16 +62,30 @@ public class Ship : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, -90);
         }
+        if (ShipSpin)
+        {
+            transform.Rotate(Time.deltaTime * 1000 * Vector3.forward);
+        }
 
 
 
+    }
+     public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Alien")
+        {
+            print("ship collision");
+            ShipSpin = true;
+            StartCoroutine(Dontshoot());
+        }
     }
 
     public IEnumerator Dontshoot()
     {
         canshoot = false;
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(PlayerSpin);
         canshoot = true;
+        ShipSpin = false;
         Debug.Log("it works");
     }
 
