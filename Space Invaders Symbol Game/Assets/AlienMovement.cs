@@ -22,22 +22,31 @@ public class AlienMovement : MonoBehaviour {
       }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Left" || collision.gameObject.name == "SpaceShip")
+        if (/*collision.gameObject.name == "Left" ||*/ collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "Shield-Cover_Child")
         {
             Destroy(gameObject);
         }
-        else
+        if (collision.tag == "Bullet")
+        {
+            if (GetComponent<SpriteRenderer>().sprite == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().sprite)
+            {
+                GameObject.Find("AlienSpawner").SendMessage("AddScore"); Debug.Log("Score is added");
+            }
+                Destroy(gameObject);
+        }
+       //This code destroyed UFOs when they hit powerups. Commented out for time being to fix.
+        /* else
         {
             if (ColorBox.colorToShoot == color&& ColorBox.switching==false)//the color is right 
             {
-                
-                Destroy(gameObject);
+                if (collision.gameObject.name == "SpaceShip")
+                    Destroy(gameObject);
                 //i have shot the correct alien here
             }
             else {
                 Destroy(gameObject);
                 //ive shot the wrong alien, and should loose a life
-            }
+            }*/
             if (collision.gameObject.name == "Earthcollider")
             {
                 if (GetComponent<SpriteRenderer>().sprite == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().sprite && ColorBox.switching == false)
@@ -58,7 +67,7 @@ public class AlienMovement : MonoBehaviour {
 
           
         }
-    }
+    
     public void EliminatePastEnemies()
     {
         Destroy(gameObject);
