@@ -846,7 +846,7 @@ Prefab:
     - target: {fileID: 114069773632902256, guid: bb786e19c05a3984bae86e38c7333f42,
         type: 2}
       propertyPath: interval
-      value: 5
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb786e19c05a3984bae86e38c7333f42, type: 2}
