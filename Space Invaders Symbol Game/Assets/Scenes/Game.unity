@@ -157,6 +157,11 @@ Prefab:
       propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212326793911553714, guid: 5a3843dcb755f024e81c13445a9c3d44,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a3843dcb755f024e81c13445a9c3d44, type: 2}
   m_IsPrefabParent: 0
@@ -855,6 +860,11 @@ Prefab:
     - target: {fileID: 1127170721949152, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
       propertyPath: m_TagString
       value: Walls
+      objectReference: {fileID: 0}
+    - target: {fileID: 212289393670114008, guid: 37723811bbb6a4241836a6c8b5485009,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37723811bbb6a4241836a6c8b5485009, type: 2}
