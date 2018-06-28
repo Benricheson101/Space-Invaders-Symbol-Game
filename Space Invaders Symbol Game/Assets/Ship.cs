@@ -8,6 +8,7 @@ public class Ship : MonoBehaviour
     public float speed = 0.2f;
     public float RotationSpeed = 3f;
     public AudioSource laser;
+    public  bool canshoot = true;
     // Use this for initialization
     void Start()
     {
@@ -31,7 +32,7 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKey("s"))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y+ -speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y + -speed);
         }
         if (Input.GetKey("left"))
         {
@@ -49,7 +50,7 @@ public class Ship : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + -speed);
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && canshoot == true)
         {
             Instantiate(Bullet, transform.position, transform.rotation);
             laser.Play();
@@ -58,5 +59,19 @@ public class Ship : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, -90);
         }
+
+
+
     }
+
+    public IEnumerator Dontshoot()
+    {
+        canshoot = false;
+        yield return new WaitForSeconds(2.5f);
+        canshoot = true;
+        Debug.Log("it works");
+    }
+
+
+
 }
