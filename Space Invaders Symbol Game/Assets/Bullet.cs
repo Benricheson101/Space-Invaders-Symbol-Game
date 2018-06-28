@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Top" || collision.gameObject.name == "Bottom" || collision.gameObject.name == "Left" || collision.gameObject.name == "Right" || collision.tag == "Alien")
+        if (collision.gameObject.name == "Top" || collision.gameObject.name == "Bottom" || collision.gameObject.name == "Left" || collision.gameObject.name == "Right" || collision.tag == "Alien" || collision.CompareTag("Walls"))
         {
             Destroy(gameObject);
 
