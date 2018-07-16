@@ -2,25 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class AlienSpawner : MonoBehaviour {
     public GameObject[] Alien;
     public float interval;
     private float LastAlien;
     public int Score;
-    public int Lives;
+    public static int Lives;
     public float ScreenRight;
     public float ScreenLeft;
-    public SpriteRenderer[] Hearts;
+    public Image[] Hearts;
+    public Text scoretext;
     
 
     // Use this for initialization
     void Start () {
-		
+        Lives = 3;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        scoretext.text = "Score: " + Score;
 		if(Time.time-interval>=LastAlien)
         {
             transform.position = new Vector2( 13, Random.Range(ScreenLeft, ScreenRight));

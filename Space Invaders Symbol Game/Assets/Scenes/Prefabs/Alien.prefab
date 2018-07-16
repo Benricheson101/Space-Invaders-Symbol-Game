@@ -84,6 +84,7 @@ MonoBehaviour:
   oscillation: 0.02
   gracePeriod: 1.5
   frequency: 5
+  ship: {fileID: 0}
 --- !u!212 &212761641452994096
 SpriteRenderer:
   m_ObjectHideFlags: 1

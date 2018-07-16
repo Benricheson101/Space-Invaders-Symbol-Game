@@ -8,6 +8,10 @@ public class Ship : MonoBehaviour
     public float speed = 0.2f;
     public float RotationSpeed = 3f;
     public AudioSource laser;
+    public  bool canshoot = true;
+    public bool ShipSpin = false;
+    public float PlayerSpin = 1f;
+
     // Use this for initialization
     void Start()
     {
@@ -31,7 +35,7 @@ public class Ship : MonoBehaviour
         }
         if (Input.GetKey("s"))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y+ -speed);
+            transform.position = new Vector2(transform.position.x, transform.position.y + -speed);
         }
         if (Input.GetKey("left"))
         {
@@ -49,7 +53,7 @@ public class Ship : MonoBehaviour
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + -speed);
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") && canshoot == true)
         {
             Instantiate(Bullet, transform.position, transform.rotation);
             laser.Play();
@@ -58,5 +62,33 @@ public class Ship : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, -90);
         }
+        if (ShipSpin)
+        {
+            transform.Rotate(Time.deltaTime * 1000 * Vector3.forward);
+        }
+
+
+
     }
+     public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Alien")
+        {
+            print("ship collision");
+            ShipSpin = true;
+            StartCoroutine(Dontshoot());
+        }
+    }
+
+    public IEnumerator Dontshoot()
+    {
+        canshoot = false;
+        yield return new WaitForSeconds(PlayerSpin);
+        canshoot = true;
+        ShipSpin = false;
+        Debug.Log("it works");
+    }
+
+
+
 }

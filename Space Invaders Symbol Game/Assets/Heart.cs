@@ -13,13 +13,23 @@ public class Heart : MonoBehaviour {
 	void Update () {
 		
 	}
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         print("Hit by: " + collision.gameObject.name);
         if(collision.gameObject.CompareTag("UsedByPowerups"))
         {
-            if(GameObject.Find("Alien Spawner")) GameObject.Find("Alien Spawner").GetComponent<AlienSpawner>().Lives++;
+            if(GameObject.Find("AlienSpawner"))
+            { 
+                if(AlienSpawner.Lives < 3)
+                {
+                AlienSpawner.Lives++;
+                Debug.Log("Lives added");
+                }
             Destroy(gameObject);
+                Debug.Log("Heart Destroyed");
+            }
+
+            /*GameObject.Find("Alien Spawner").GetComponent<AlienSpawner>().Lives++;*/
         }
     }
 }

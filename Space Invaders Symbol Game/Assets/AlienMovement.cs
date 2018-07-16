@@ -10,35 +10,57 @@ public class AlienMovement : MonoBehaviour {
     public float oscillation = 1f;
     public float gracePeriod = 1.5f;
     public float frequency = 1f;
+    public Ship ship;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         ColorBox = GameObject.Find("Color Box").GetComponent<Box>();
-        }
+        ship = GameObject.Find("SpaceShip").GetComponent<Ship>();
+    }
+
+
 	
 	// Update is called once per frame
 	void Update () {
         transform.Translate(-transform.right * speed +( transform.up * Mathf.Sin(Time.time*frequency))*oscillation);
         
       }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Left" || collision.gameObject.name == "SpaceShip")
+        if (/*collision.gameObject.name == "Left" ||*/ collision.gameObject.name == "SpaceShip" || collision.gameObject.name == "Shield-Cover_Child")
         {
             Destroy(gameObject);
         }
-        else
+        if (collision.tag == "Bullet")
+        {
+            if (GetComponent<SpriteRenderer>().sprite == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().sprite)
+            {
+                GameObject.Find("AlienSpawner").SendMessage("AddScore"); Debug.Log("Score is added");
+            }
+            else
+            {
+                Debug.Log("Wrong Ship Shot");
+                ship.StartCoroutine(ship.Dontshoot());
+            }
+                Destroy(gameObject);
+        }
+
+       
+        //This code destroyed UFOs when they hit powerups. Commented out for time being to fix.
+        /* else
         {
             if (ColorBox.colorToShoot == color&& ColorBox.switching==false)//the color is right 
             {
-                
-                Destroy(gameObject);
+                if (collision.gameObject.name == "SpaceShip")
+                    Destroy(gameObject);
                 //i have shot the correct alien here
             }
             else {
                 Destroy(gameObject);
                 //ive shot the wrong alien, and should loose a life
-            }
-            if (collision.gameObject.name == "Earthcollider")
+            }*/
+        if (collision.gameObject.name == "Earthcollider")
             {
                 if (GetComponent<SpriteRenderer>().sprite == GameObject.Find("Color Box").GetComponent<SpriteRenderer>().sprite && ColorBox.switching == false)
                 {
@@ -58,7 +80,13 @@ public class AlienMovement : MonoBehaviour {
 
           
         }
-    }
+    /*
+    void Dontshoot()
+    {
+        Ship.canshoot = true;
+        Debug.Log("it works");
+    }*/
+    
     public void EliminatePastEnemies()
     {
         Destroy(gameObject);
